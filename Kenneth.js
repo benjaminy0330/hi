@@ -21,13 +21,13 @@ function returnInput(input) {
 
   return output;
 }
-
+//algorithmn
 function rockPaperScissors(input) {
   const random = Math.floor(Math.random() * 100);
   let opponentChoice;
   let outcome;
 
-  for (let i = 0; i <= random; i++) {
+  for (let i = 0; i <= random; i++) { //contains for statements and if statements -- sequencing is random
     if (i % 3 == 0) {
       opponentChoice = "rock";
     } else if (i % 2 == 0) {
