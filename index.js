@@ -37,10 +37,30 @@ function newFactorial(n) {
 console.log(checkSpaces(5, "CC..C", ".CC.."));*/
 
 
-function dtb(){
-    
+//binary to decimal ??? --> 9A5 = 
+
+function btd(b){
+
+    let length = b.length();
+    for(let i = 0; );
+
+
 }
 
+btd(1101);
 
+
+
+
+
+/*
+9A5
+
+5 = 5
+A = 10*16 = 160
+9 = 9*16^2 = 2304
+
+2469
+*/
 
 
