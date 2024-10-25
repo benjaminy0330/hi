@@ -39,28 +39,55 @@ console.log(checkSpaces(5, "CC..C", ".CC.."));*/
 
 //binary to decimal ??? --> 9A5 = 
 
-function btd(b){
-
-    let length = b.length();
-    for(let i = 0; );
-
-
+/*function btd(binary){
+    let decimal = 0;
+    for(let i =0; i<binary.length; i++){
+        if(binary[binary.length - i - 1] === "1"){
+            decimal = decimal + Math.pow(2,i);
+                
+        }
+    }
+    return decimal;
 }
 
-btd(1101);
+console.log(btd("1101"));*/
 
 
 
 
 
-/*
-9A5
 
-5 = 5
-A = 10*16 = 160
-9 = 9*16^2 = 2304
 
-2469
-*/
+/*function dtb(decimal){
+    let binary = 0;
+    while(let i = 0; i<decimal.length; i++){
+        if(decimal[decimal.length - i - 1] === "1"){
+            binary = binary / Math.pow(2,i);
+        }
+    }
+return binary;
+}
+
+console.log(dtb("1"));*/
+
+
+
+function dtb(dec){
+    let binary = "";
+    if (dec === 0){
+        return 0;
+    }
+    while(dec > 0){
+        let remainder = dec % 2
+        binary = remainder + binary;
+        dec = Math.floor(dec/2);
+    }
+    return binary;
+}
+console.log(dtb(9));
+
+
+
+
 
 
